@@ -45,7 +45,7 @@ export const projects: Project[] = [
     architecture:
       "Monolithic Flask application with RESTful API endpoints, PostgreSQL database with complex relational models, server-side rendering with JavaScript-enhanced frontend.",
     deployment: "Deployed on AWS EC2 with Nginx reverse proxy. Database hosted on managed PostgreSQL.",
-    image: "/assets/projects/crm-dashboard.jpg",
+    image: "/ritikrauniyar/assets/projects/crm-dashboard.jpg",
     status: "Production",
     links: {
       type: "Private Production System",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     architecture:
       "Next.js App Router with server components, Tailwind CSS design system, REST API integration layer.",
     deployment: "Deployed on Vercel with custom domain and CDN.",
-    image: "/assets/projects/healthcare-platform.jpg",
+    image: "/ritikrauniyar/assets/projects/healthcare-platform.jpg",
     status: "Production",
     links: {
       live: "https://klfprohealthcare.com",
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     architecture:
       "Next.js with ISR for fast page loads, API routes for content management, automated workflows for social distribution.",
     deployment: "Deployed on Vercel with custom domain, Cloudflare CDN.",
-    image: "/assets/projects/news-platform.jpg",
+    image: "/ritikrauniyar/assets/projects/news-platform.jpg",
     status: "Production",
     links: {
       live: "https://klftimes.com",
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     architecture:
       "Next.js frontend with FastAPI backend, PostgreSQL for data storage, background workers for batch collection, OpenPyXL for Excel generation.",
     deployment: "Internal deployment on AWS EC2.",
-    image: "/assets/projects/npi-extractor.jpg",
+    image: "/ritikrauniyar/assets/projects/npi-extractor.jpg",
     status: "Production",
     links: {
       live: "https://klfpro-npi-extractor-seven.vercel.app/",
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     architecture:
       "Next.js App Router frontend, Node.js/Express API, PostgreSQL with Prisma ORM, PDF generation for payslips.",
     deployment: "Deployed on Vercel (frontend) and AWS EC2 (backend).",
-    image: "/assets/projects/hrms-dashboard.jpg",
+    image: "/ritikrauniyar/assets/projects/hrms-dashboard.jpg",
     status: "Production",
     links: {
       type: "Private Production System",
@@ -193,7 +193,7 @@ export const projects: Project[] = [
     architecture:
       "Flutter with Provider state management, REST API integration with the HRMS backend, GPS and location services integration.",
     deployment: "Distributed as APK for Android devices.",
-    image: "/assets/projects/hrms-mobile.jpg",
+    image: "/ritikrauniyar/assets/projects/hrms-mobile.jpg",
     status: "Production",
     links: {
       type: "Private Production System",
@@ -221,7 +221,7 @@ export const projects: Project[] = [
     ],
     architecture: "Next.js with static generation, Tailwind CSS design system.",
     deployment: "Deployed on Vercel with custom domain.",
-    image: "/assets/projects/corporate-website.jpg",
+    image: "/ritikrauniyar/assets/projects/corporate-website.jpg",
     status: "Production",
     links: {
       live: "https://klfpro.in",
