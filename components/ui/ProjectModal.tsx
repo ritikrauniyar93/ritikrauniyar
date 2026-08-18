@@ -63,7 +63,7 @@ export default function ProjectModal({ project, onClose, projects, onNavigate }:
             initial="initial"
             animate="animate"
             exit="exit"
-            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-surface rounded-2xl border border-white/6 shadow-2xl focus:outline-none"
+            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0a0a0e]/90 backdrop-blur-2xl border border-white/10 shadow-2xl focus:outline-none"
             onClick={(e) => e.stopPropagation()}
           >
             <button

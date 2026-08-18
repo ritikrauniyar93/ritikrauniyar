@@ -6,7 +6,7 @@ import ExperienceTimeline from '@/components/ui/ExperienceTimeline';
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24 md:py-32 bg-surface/50">
+    <section id="experience" className="py-24 md:py-32 bg-black/50 backdrop-blur-sm border-t border-b border-white/5">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <ScrollReveal>
           <div className="mb-16 md:mb-24">

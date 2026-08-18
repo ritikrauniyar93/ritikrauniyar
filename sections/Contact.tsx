@@ -17,8 +17,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 md:py-40 text-center relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent/5 blur-[120px] w-96 h-96 rounded-full pointer-events-none -z-10" />
+    <section id="contact" className="py-32 md:py-40 text-center relative overflow-hidden bg-black/20">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent/5 mix-blend-screen blur-[120px] w-96 h-96 rounded-full pointer-events-none -z-10" />
       
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-10">
         <ScrollReveal>

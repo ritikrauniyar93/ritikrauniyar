@@ -8,10 +8,12 @@ import TechStack from "@/sections/TechStack";
 import Contact from "@/sections/Contact";
 import CustomCursor from "@/components/ui/CustomCursor";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import GlobalBackground from "@/components/ui/GlobalBackground";
 
 export default function Home() {
   return (
     <>
+      <GlobalBackground />
       <CustomCursor />
       <ScrollProgress />
       <Navbar />

@@ -77,7 +77,7 @@ export const projects: Project[] = [
     image: "/assets/projects/healthcare-platform.jpg",
     status: "Production",
     links: {
-      live: "https://klfprohealthcare.co",
+      live: "https://klfprohealthcare.com",
       type: "Public Website",
     },
     isProfessional: true,
@@ -137,7 +137,8 @@ export const projects: Project[] = [
     image: "/assets/projects/npi-extractor.jpg",
     status: "Production",
     links: {
-      type: "Private Production System",
+      live: "https://klfpro-npi-extractor-seven.vercel.app/",
+      type: "Demo",
     },
     isProfessional: true,
   },

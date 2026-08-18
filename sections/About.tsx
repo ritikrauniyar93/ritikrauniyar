@@ -12,7 +12,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 md:py-32">
+    <section id="about" className="py-24 md:py-32 bg-black/30 backdrop-blur-[2px]">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="grid md:grid-cols-12 gap-12 lg:gap-20">
           <div className="md:col-span-5">
@@ -45,7 +45,7 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-6 mt-16 md:mt-24">
           {capabilities.map((cap, i) => (
             <ScrollReveal key={i} delay={0.1 * (i + 1)}>
-              <div className="p-6 rounded-xl bg-surface border border-white/6 hover:border-white/10 transition-colors h-full flex flex-col">
+              <div className="p-6 rounded-xl bg-black/40 border border-white/10 backdrop-blur-md hover:border-white/20 transition-colors h-full flex flex-col">
                 <div className="mb-4 text-foreground bg-white/5 inline-flex p-3 rounded-lg w-fit">
                   <cap.icon size={24} />
                 </div>

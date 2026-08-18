@@ -5,7 +5,7 @@ import { Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/6 py-12 bg-background">
+    <footer className="border-t border-white/5 py-12 bg-gradient-to-t from-black via-black/90 to-transparent">
       <div className="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <h2 className="text-xl font-bold text-foreground">Ritik Rauniyar</h2>
@@ -24,7 +24,7 @@ export default function Footer() {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://linkedin.com/in/ritikrauniyar93"
+            href="https://www.linkedin.com/in/ritik-rauniyar-208758260/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted hover:text-foreground transition-colors p-2"

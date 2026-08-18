@@ -29,7 +29,7 @@ export default function Hero() {
 
   return (
     <section 
-      className="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-transparent"
       onMouseMove={handleMouseMove}
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-10 grid lg:grid-cols-2 gap-12 items-center">
@@ -37,7 +37,7 @@ export default function Hero() {
           variants={heroStagger}
           initial="initial"
           animate="animate"
-          className="max-w-2xl"
+          className="max-w-2xl bg-gradient-to-r from-black/60 to-transparent p-6 rounded-2xl backdrop-blur-sm"
         >
           <motion.div variants={heroChild} className="inline-flex items-center text-xs font-mono text-muted-foreground bg-surface border border-white/6 px-3 py-1.5 rounded-lg mb-6">
             <span className="text-accent mr-2">const</span> role = &quot;AI Engineer &amp; IT Head&quot;
@@ -86,7 +86,7 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5 + i * 0.1, duration: 0.5 }}
-                className="relative flex items-center gap-3 p-3.5 rounded-xl bg-surface/80 border border-white/6 backdrop-blur-md z-10"
+                className="relative flex items-center gap-3 p-3.5 rounded-xl bg-black/40 border border-white/10 backdrop-blur-xl z-10"
               >
                 <div className={`p-2 rounded-lg bg-white/5 ${node.color}`}>
                   <node.icon size={20} />
@@ -106,3 +106,4 @@ export default function Hero() {
     </section>
   );
 }
+

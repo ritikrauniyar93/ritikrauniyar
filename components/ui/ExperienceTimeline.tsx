@@ -21,7 +21,7 @@ export default function ExperienceTimeline() {
           <ScrollReveal key={exp.id} delay={index * 0.1}>
             <div className="relative pl-12 md:pl-20 group">
               {/* Timeline Dot */}
-              <div className="absolute left-[11px] md:left-[23px] top-1.5 w-[9px] h-[9px] rounded-full bg-background border-2 border-white/20 group-hover:border-accent transition-colors duration-300 z-10" />
+              <div className="absolute left-[11px] md:left-[23px] top-1.5 w-[9px] h-[9px] rounded-full bg-black border-2 border-white/20 group-hover:border-accent transition-colors duration-300 z-10" />
               
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                 <div>
@@ -48,7 +48,7 @@ export default function ExperienceTimeline() {
 
               <div className="flex flex-wrap gap-2">
                 {exp.technologies.map(tech => (
-                  <span key={tech} className="px-3 py-1 bg-surface border border-white/6 rounded-full text-xs text-foreground/80 group-hover:border-white/10 transition-colors">
+                  <span key={tech} className="px-3 py-1 bg-black/40 backdrop-blur-md border border-white/10 rounded-full text-xs text-foreground/80 group-hover:border-white/20 transition-colors">
                     {tech}
                   </span>
                 ))}
