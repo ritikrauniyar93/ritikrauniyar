@@ -12,29 +12,26 @@ export default function GlobalBackground() {
   const physics = { damping: 15, mass: 0.27, stiffness: 55 };
   const smoothY = useSpring(yScrollTransform, physics);
 
-  // Mouse parallax
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number; duration: number }>>([]);
 
   useEffect(() => {
-    if (prefersReducedMotion) return;
+    // Only enable effects on desktop to save battery and performance
+    const checkMobile = () => window.innerWidth < 768;
+    
+    if (prefersReducedMotion || checkMobile()) return;
 
     const handleMouseMove = (e: MouseEvent) => {
       const { innerWidth, innerHeight } = window;
-      const x = (e.clientX / innerWidth - 0.5) * 15; // Max 7.5px movement
+      const x = (e.clientX / innerWidth - 0.5) * 15;
       const y = (e.clientY / innerHeight - 0.5) * 15;
       setMousePos({ x, y });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [prefersReducedMotion]);
-
-  // Generate a few random particles
-  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number; duration: number }>>([]);
-  
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-    const newParticles = Array.from({ length: 15 }).map((_, i) => ({
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    
+    // Generate fewer particles for better performance
+    const newParticles = Array.from({ length: 12 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -44,6 +41,8 @@ export default function GlobalBackground() {
     setTimeout(() => {
       setParticles(newParticles);
     }, 0);
+
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [prefersReducedMotion]);
 
   return (

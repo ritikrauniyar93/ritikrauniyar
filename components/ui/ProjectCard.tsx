@@ -127,7 +127,9 @@ export default function ProjectCard({ project, index, onOpenModal }: ProjectCard
                 src={project.image}
                 alt={project.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
                 className="object-cover object-top"
+                priority={index === 0} // Only prioritize first image
               />
             </motion.div>
           </div>
