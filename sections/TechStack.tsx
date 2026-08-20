@@ -74,15 +74,15 @@ export default function TechStack() {
 
           {/* Top Capability Bar */}
           <ScrollReveal delay={0.2}>
-            <div className="flex flex-wrap md:flex-nowrap items-center gap-2 md:gap-4 p-2 bg-[#05070f]/80 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-full">
+            <div className="flex flex-wrap md:flex-nowrap items-center gap-2 md:gap-3 p-1.5 bg-[#05070f]/80 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-full">
               {capabilities.map((cap, i) => (
-                <div key={i} className="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-white/5 transition-colors">
-                  <div className="text-indigo-400/80">{cap.icon}</div>
+                <div key={i} className="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-white/5 transition-colors">
+                  <div className="text-indigo-400/80 scale-[0.85]">{cap.icon}</div>
                   <div className="flex flex-col">
-                    <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground leading-tight">{cap.title}</span>
-                    <span className="text-[11px] font-medium text-white leading-tight">{cap.subtitle}</span>
+                    <span className="text-[9px] uppercase tracking-wider font-semibold text-muted-foreground leading-tight">{cap.title}</span>
+                    <span className="text-[10px] font-medium text-white leading-tight">{cap.subtitle}</span>
                   </div>
-                  {i < capabilities.length - 1 && <div className="hidden md:block w-px h-8 bg-white/10 ml-4" />}
+                  {i < capabilities.length - 1 && <div className="hidden md:block w-px h-6 bg-white/10 ml-2" />}
                 </div>
               ))}
             </div>
@@ -98,21 +98,21 @@ export default function TechStack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="xl:col-span-7 bg-[rgba(8,10,18,0.7)] backdrop-blur-[18px] border border-white/10 rounded-[32px] p-8 md:p-10 relative overflow-hidden group"
+            className="xl:col-span-7 bg-[rgba(8,10,18,0.7)] backdrop-blur-[18px] border border-white/10 rounded-[24px] p-6 md:p-8 relative overflow-hidden group"
           >
             {/* Subtle Core Background Glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-indigo-500/5 blur-[120px] pointer-events-none rounded-full" />
             
-            <div className="flex items-center gap-3 mb-12">
-              <h3 className="text-sm font-bold uppercase tracking-[0.15em] text-white">Engineering Core</h3>
+            <div className="flex items-center gap-3 mb-8">
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.15em] text-white">Engineering Core</h3>
               <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent"></div>
             </div>
 
             {/* Core Nodes Container */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2 lg:gap-4 relative z-10">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2 relative z-10">
               
               {/* Connection Line (Desktop) */}
-              <div className="hidden md:block absolute top-[40px] left-[50px] right-[50px] h-px bg-white/10 -z-10 overflow-hidden">
+              <div className="hidden md:block absolute top-[24px] left-[40px] right-[40px] h-px bg-white/10 -z-10 overflow-hidden">
                 <motion.div 
                   className="w-full h-full bg-gradient-to-r from-transparent via-indigo-500 to-transparent"
                   animate={{ x: ['-100%', '100%'] }}
@@ -123,21 +123,21 @@ export default function TechStack() {
               {coreNodes.map((node, i) => (
                 <div 
                   key={node.id} 
-                  className={`flex flex-col items-center md:w-32 transition-all duration-500 ${getOpacity(node.tech, node.id)}`}
+                  className={`flex flex-col items-center md:w-28 transition-all duration-500 ${getOpacity(node.tech, node.id)}`}
                 >
-                  <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#0a0c14]/80 backdrop-blur-md border border-white/10 rounded-2xl mb-4 group-hover:border-indigo-500/30 transition-colors shadow-xl">
-                    <div className="text-indigo-400">{node.icon}</div>
+                  <div className="w-12 h-12 flex items-center justify-center bg-[#0a0c14]/80 backdrop-blur-md border border-white/10 rounded-xl mb-3 group-hover:border-indigo-500/30 transition-colors shadow-xl">
+                    <div className="text-indigo-400 scale-[0.8]">{node.icon}</div>
                   </div>
-                  <div className="text-center">
-                    <h4 className="text-[11px] font-bold text-white mb-1 tracking-wider">{node.title}</h4>
-                    <p className="text-[10px] text-muted-foreground leading-tight mb-3 px-2 h-6">{node.desc}</p>
-                    <div className="flex flex-col gap-1">
+                  <div className="text-center w-full">
+                    <h4 className="text-[10px] font-bold text-white mb-1 tracking-wider">{node.title}</h4>
+                    <p className="text-[9px] text-muted-foreground leading-tight mb-2 px-1 h-6">{node.desc}</p>
+                    <div className="flex flex-col gap-1 w-full items-center">
                       {node.tech.map(t => (
                         <span 
                           key={t} 
                           onMouseEnter={() => setHoveredTech(t)}
                           onMouseLeave={() => setHoveredTech(null)}
-                          className="text-[10px] font-medium px-2 py-0.5 bg-white/5 border border-white/5 rounded text-foreground/80 hover:bg-indigo-500/20 hover:text-white hover:border-indigo-500/30 cursor-pointer transition-colors"
+                          className="text-[9px] font-medium px-1.5 py-0.5 bg-white/5 border border-white/5 rounded text-foreground/80 hover:bg-indigo-500/20 hover:text-white hover:border-indigo-500/30 cursor-pointer transition-colors max-w-full truncate"
                         >
                           {t}
                         </span>
@@ -153,11 +153,11 @@ export default function TechStack() {
             </div>
 
             {/* Bottom Flow Footer */}
-            <div className="mt-16 flex items-center justify-center gap-2 md:gap-4 text-[10px] md:text-xs font-mono text-muted-foreground">
+            <div className="mt-10 flex items-center justify-center gap-2 md:gap-4 text-[9px] md:text-[10px] font-mono text-muted-foreground">
               {['Design', 'Develop', 'Deploy', 'Operate', 'Scale'].map((step, i) => (
                 <React.Fragment key={step}>
                   <span className="tracking-widest uppercase">{step}</span>
-                  {i < 4 && <ArrowRight size={12} className="text-indigo-500/50" />}
+                  {i < 4 && <ArrowRight size={10} className="text-indigo-500/50" />}
                 </React.Fragment>
               ))}
             </div>
@@ -172,24 +172,24 @@ export default function TechStack() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`bg-[rgba(8,10,18,0.6)] backdrop-blur-[18px] border border-white/10 rounded-[20px] p-6 hover:-translate-y-1 hover:border-indigo-500/30 transition-all duration-300 group ${
+                className={`bg-[rgba(8,10,18,0.6)] backdrop-blur-[18px] border border-white/10 rounded-[20px] p-5 hover:-translate-y-1 hover:border-indigo-500/30 transition-all duration-300 group ${
                   i === 0 || i === techCategories.length - 1 ? 'sm:col-span-2' : ''
                 } ${getOpacity(cat.tech, cat.title)}`}
               >
                 <div className="flex flex-col h-full">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="text-indigo-400/70 group-hover:text-indigo-400 group-hover:drop-shadow-[0_0_8px_rgba(129,140,248,0.5)] transition-all">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="text-indigo-400/70 group-hover:text-indigo-400 group-hover:drop-shadow-[0_0_8px_rgba(129,140,248,0.5)] transition-all scale-[0.85]">
                       {cat.icon}
                     </div>
-                    <h4 className="text-xs font-bold tracking-widest text-white">{cat.title}</h4>
+                    <h4 className="text-[11px] font-bold tracking-widest text-white">{cat.title}</h4>
                   </div>
-                  <div className="flex flex-col gap-2 mt-auto">
+                  <div className="flex flex-col gap-1.5 mt-auto">
                     {cat.tech.map(t => (
                       <span 
                         key={t} 
                         onMouseEnter={() => setHoveredTech(t)}
                         onMouseLeave={() => setHoveredTech(null)}
-                        className="text-sm text-muted-foreground hover:text-white transition-colors cursor-default"
+                        className="text-[11px] text-muted-foreground hover:text-white transition-colors cursor-default"
                       >
                         {t}
                       </span>
@@ -220,13 +220,13 @@ export default function TechStack() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="flex flex-col group rounded-2xl bg-[#0a0c14]/80 backdrop-blur-xl border border-white/5 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 overflow-hidden"
                 >
-                  <div className="p-5 flex flex-col flex-1">
+                  <div className="p-4 flex flex-col flex-1">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-[10px] font-mono text-indigo-400/80">0{i + 1}</span>
                       <span className="text-[8px] uppercase font-bold tracking-wider text-muted-foreground">{project.category}</span>
                     </div>
-                    <h4 className="text-base font-bold text-white mb-1 group-hover:text-indigo-400 transition-colors">{project.title}</h4>
-                    <p className="text-xs text-muted-foreground line-clamp-2 mb-4 flex-1">
+                    <h4 className="text-[12px] font-bold text-white mb-1 group-hover:text-indigo-400 transition-colors">{project.title}</h4>
+                    <p className="text-[10px] text-muted-foreground line-clamp-2 mb-4 flex-1">
                       {project.shortDescription}
                     </p>
                     
@@ -241,7 +241,7 @@ export default function TechStack() {
                       />
                     </div>
 
-                    <div className="flex flex-wrap gap-1.5 mt-auto">
+                    <div className="flex flex-wrap gap-1 mt-auto">
                       {project.techStack.slice(0, 3).map(t => (
                         <span key={t} className="text-[9px] px-1.5 py-0.5 rounded-sm bg-white/5 text-white/70">
                           {t}
@@ -251,11 +251,11 @@ export default function TechStack() {
                   </div>
                   
                   {/* Subtle Footer CTA */}
-                  <div className="px-5 py-3 border-t border-white/5 flex items-center justify-between bg-white/[0.02] group-hover:bg-white/[0.04] transition-colors">
-                    <span className="text-[10px] font-medium text-white/50 group-hover:text-white/80 transition-colors">
+                  <div className="px-4 py-2.5 border-t border-white/5 flex items-center justify-between bg-white/[0.02] group-hover:bg-white/[0.04] transition-colors">
+                    <span className="text-[9px] font-medium uppercase tracking-widest text-white/50 group-hover:text-white/80 transition-colors">
                       {project.links.live ? 'Visit Website' : 'Case Study'}
                     </span>
-                    <ArrowRight size={12} className="text-white/30 group-hover:text-indigo-400 group-hover:translate-x-0.5 transition-all" />
+                    <ArrowRight size={10} className="text-white/30 group-hover:text-indigo-400 group-hover:translate-x-0.5 transition-all" />
                   </div>
                 </motion.div>
               ))}
