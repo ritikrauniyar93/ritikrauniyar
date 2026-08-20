@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <h2 className="text-xl font-bold text-foreground">Ritik Rauniyar</h2>
-          <p className="text-muted mt-1">AI Engineer & IT Head</p>
+          <p className="text-muted mt-1">AI Engineer</p>
           <p className="text-muted/60 text-sm mt-1">AI Engineering · Software · Infrastructure</p>
         </div>
 

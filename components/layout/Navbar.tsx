@@ -83,7 +83,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:flex flex-col">
             <span className="text-[15px] font-semibold text-foreground leading-tight">Ritik Rauniyar</span>
-            <span className="text-[12px] font-medium text-muted-foreground leading-tight">AI Engineer & IT Head</span>
+            <span className="text-[12px] font-medium text-muted-foreground leading-tight">AI Engineer</span>
           </div>
         </a>
 

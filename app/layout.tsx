@@ -13,33 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ritik Rauniyar — AI Engineer & IT Head",
+  title: "Ritik Rauniyar - AI Engineer",
   description:
-    "Ritik Rauniyar is an AI Engineer and IT Head building intelligent enterprise software, AI-powered platforms, and scalable cloud infrastructure.",
+    "Ritik Rauniyar is an AI Engineer building intelligent enterprise software, AI-powered platforms, and scalable cloud infrastructure.",
   keywords: [
     "Ritik Rauniyar",
     "AI Engineer",
-    "IT Head",
+    "Software Engineer",
     "Full Stack Developer",
-    "KLFPRO",
-    "Enterprise Software",
     "Next.js",
     "React",
     "Python",
+    "Cloud Architecture"
   ],
   authors: [{ name: "Ritik Rauniyar" }],
   creator: "Ritik Rauniyar",
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Ritik Rauniyar — AI Engineer & IT Head",
+    url: "https://ritikrauniyar93.github.io/",
+    title: "Ritik Rauniyar - AI Engineer",
     description:
-      "Building intelligent enterprise software, AI-powered platforms, and scalable cloud infrastructure.",
-    siteName: "Ritik Rauniyar",
+      "AI Engineer specializing in scalable enterprise systems and automation.",
+    siteName: "Ritik Rauniyar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ritik Rauniyar — AI Engineer & IT Head",
+    title: "Ritik Rauniyar - AI Engineer",
     description:
       "Building intelligent enterprise software, AI-powered platforms, and scalable cloud infrastructure.",
   },

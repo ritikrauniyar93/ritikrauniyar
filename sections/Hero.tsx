@@ -40,7 +40,7 @@ export default function Hero() {
           className="max-w-2xl bg-gradient-to-r from-black/60 to-transparent p-6 rounded-2xl backdrop-blur-sm"
         >
           <motion.div variants={heroChild} className="inline-flex items-center text-xs font-mono text-muted-foreground bg-surface border border-white/6 px-3 py-1.5 rounded-lg mb-6">
-            <span className="text-accent mr-2">const</span> role = &quot;AI Engineer &amp; IT Head&quot;
+            <span className="text-accent mr-2">const</span> role = &quot;AI Engineer&quot;
           </motion.div>
           
           <motion.h1 variants={heroChild} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.08] mb-6">

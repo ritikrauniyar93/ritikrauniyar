@@ -14,7 +14,7 @@ const storyBlocks = [
   { title: 'Build', desc: 'I build complete digital products across frontend, backend, databases, APIs and mobile.' },
   { title: 'Intelligence', desc: 'I work with AI, automation, data extraction and intelligent internal tools to solve real operational problems.' },
   { title: 'Infrastructure', desc: 'I manage deployment and infrastructure across AWS, Vercel, Cloudflare and production environments.' },
-  { title: 'Leadership', desc: 'As IT Head at KLFPRO, I work across technology decisions, internal systems, infrastructure and engineering delivery.' },
+  { title: 'Leadership', desc: 'At KLFPRO, I work across technology decisions, internal systems, infrastructure and engineering delivery.' },
 ];
 
 const whatIDo = [
@@ -78,7 +78,7 @@ export default function About() {
                   <Zap size={100} />
                 </div>
                 <h3 className="text-2xl font-bold text-white tracking-tight mb-1 relative z-10">Ritik Rauniyar</h3>
-                <p className="text-indigo-400 font-medium mb-6 relative z-10 text-[15px]">AI Engineer & IT Head</p>
+                <p className="text-indigo-400 font-medium mb-6 relative z-10 text-[15px]">AI Engineer</p>
                 
                 <ul className="space-y-3 mb-8 relative z-10">
                   {['Enterprise Software', 'AI & Automation', 'Cloud Infrastructure', 'Product Engineering'].map(skill => (
